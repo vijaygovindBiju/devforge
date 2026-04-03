@@ -1,0 +1,117 @@
+* {
+  font-family: JetbrainsMono Nerd Font;
+  font-size: 11px;
+  min-height: 0;
+}
+
+#waybar {
+  background: transparent;
+  color: #c6d0f5;
+  margin: 0px 0px;
+}
+
+#workspaces {
+  border-radius: 5px;
+  margin: 4px 8px;
+  padding: 0px 4px;
+  background: #101010;
+}
+
+#workspaces button {
+  color: #babbf1;
+  border-radius: 5px;
+  padding: 1px 6px;
+  margin: 2px 1px;
+}
+
+#workspaces button.active {
+  color: #99d1db;
+  background: #1e1e2e;
+}
+
+button {
+  background: transparent;
+}
+
+#workspaces button:hover {
+  background: #1e1e1e;
+  border: 0px solid transparent;
+}
+
+#tray,
+#backlight,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#cpu,
+#temperature,
+#memory,
+#idle_inhibitor,
+#custom-lock,
+#custom-power,
+#custom-grayscale,
+#custom-power-mode,
+#custom-bar-mode,
+#custom-gpu {
+  background-color: #101010;
+  padding: 4px 12px;
+  margin: 4px 4px;
+  border-radius: 5px;
+}
+
+#idle_inhibitor {
+  color: #f2d5cf;
+}
+
+#custom-grayscale {
+  color: #babbf1;
+}
+
+#custom-power {
+  margin-right: 12px;
+}
+
+#clock {
+  color: #8caaee;
+}
+
+#battery {
+  color: #a6d189;
+}
+
+#battery.charging {
+  color: #a6d189;
+}
+
+#battery.warning {
+  background: #f9e2af;
+  color: #11111b;
+}
+
+#battery.critical {
+  background: #f38ba8;
+  color: #11111b;
+}
+
+#pulseaudio {
+  color: #ea999c;
+}
+
+#bluetooth {
+  color: #89dceb;
+  transition: all 0.2s ease;
+}
+
+#bluetooth:hover {
+  background: #1e1e2e;
+}
+
+#bluetooth.connected {
+  color: #a6e3a1;
+}
+
+#bluetooth.disabled {
+  color: #6c7086;
+}

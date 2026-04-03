@@ -1,0 +1,107 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "modules-left": [
+    "hyprland/workspaces",
+    "idle_inhibitor",
+    "custom/grayscale",
+    "custom/power-mode",
+    "custom/bar-mode"
+  ],
+
+  "modules-center": ["clock"],
+
+  "modules-right": [
+    "pulseaudio",
+    "battery",
+    "network",
+    "bluetooth",
+    "custom/power"
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{name}: {icon}",
+    "format-icons": {
+      "active": "",
+      "default": ""
+    }
+  },
+
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": "󰾆"
+    }
+  },
+
+  "bluetooth": {
+    "format": " {status}",
+    "format-disabled": "󰂲 Off",
+    "format-connected": "󰂱 {device_alias}",
+    "tooltip-format": "{device_alias}",
+    "tooltip": true,
+    "on-click": "blueman-manager"
+  },
+
+  "clock": {
+    "timezone": "Asia/Kolkata",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%A, %d/%m/%Y - %I:%M:%S %p}",
+    "interval": 1
+  },
+
+  "battery": {
+    "interval": 10,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
+
+  "network": {
+    "interface": "wlan0",
+    "format-wifi": " {signalStrength}%",
+    "format-ethernet": "󰈀 Connected",
+    "format-disconnected": "󰤠 No Network",
+    "interval": 5,
+    "tooltip": false,
+    "on-click": "networkmanager_dmenu"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "custom/power": {
+    "tooltip": false,
+    "on-click": "wleave --layout ~/.config/wleave/layout.json",
+    "format": "⏻"
+  },
+
+  "custom/grayscale": {
+    "format": "󰿢",
+    "on-click": "/home/pirate/.config/hypr/scripts/grayscale.sh"
+  },
+
+  "custom/power-mode": {
+    "format": "⚡",
+    "on-click": "/home/pirate/.config/hypr/scripts/power_mode.sh"
+  },
+
+  "custom/bar-mode": {
+    "format": "📊",
+    "on-click": "/home/pirate/.config/hypr/scripts/bar_toggle.sh"
+  }
+}
