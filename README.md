@@ -45,7 +45,7 @@ The `SUPER` (Windows) key is the main modifier.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/dotfiles.git ~/dotfiles
+   git clone https://github.com/vijaygovindBiju/devforge.git ~/dotfiles
    ```
 2. Symlink the configurations to `~/.config/`:
    ```bash
@@ -58,7 +58,8 @@ The `SUPER` (Windows) key is the main modifier.
 
 ## 🎨 Screenshots
 
-*(Add your screenshots here!)*
+![alt text](image.png)
+![alt text](image-1.png)
 
 ---
 *Built with ❤️ and a lot of trial & error.*
