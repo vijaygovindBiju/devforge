@@ -57,9 +57,13 @@ The `SUPER` (Windows) key is the main modifier.
 3. Make sure to install the required fonts located in `hypr/Fonts/`.
 
 ## 🎨 Screenshots
-
+Home
 ![alt text](image.png)
+power menu
+![alt text](image-2.png)
+shell
 ![alt text](image-1.png)
-
+waybar
+![alt text](image-3.png)
 ---
 *Built with ❤️ and a lot of trial & error.*
